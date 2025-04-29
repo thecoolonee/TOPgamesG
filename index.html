@@ -2,42 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Unblocked Games Portal</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fun Zone</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: #121212;
+      color: #f0f0f0;
+      text-align: center;
+    }
+    header {
+      background: #1f1f1f;
+      padding: 20px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    p {
+      color: #ccc;
+    }
+    .game-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 40px;
+    }
+    .game {
+      background: #1e1e1e;
+      margin: 15px;
+      padding: 20px;
+      border-radius: 10px;
+      width: 200px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    .game a {
+      color: #00ffcc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <div class="container">
-      <h1>🕹️ Unblocked Games Portal</h1>
-      <p>No restrictions. Just play.</p>
-    </div>
+    <h1>🎮 Fun Zone</h1>
+    <p>Play cool unblocked games right in your browser</p>
   </header>
 
-  <main class="container">
-    <section class="games-grid">
-      <a href="2048.html" target="_blank" class="game-card">
-        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT61-GziqgZeHYo4b7dWEOjPSYSEgMg97OvmbKeTL6jpLtXG-NAH_PKqaKQ1kRM0J3i1cfIrEsh7gIUCwvNG_YjTPVs_iophrf3MEgk0zYN" alt="2048">
-        <div class="game-title">2048</div>
-      </a>
-
-      <a href="https://example.com/game2" target="_blank" class="game-card">
-        <img src="https://via.placeholder.com/200x150" alt="Game 2">
-        <div class="game-title">Retro Bowl</div>
-      </a>
-
-      <a href="https://example.com/game3" target="_blank" class="game-card">
-        <img src="https://via.placeholder.com/200x150" alt="Game 3">
-        <div class="game-title">Bitlife</div>
-      </a>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Unblocked Games Portal | Stay stealthy ⚡</p>
+  <div class="game-list">
+    <div class="game">
+      <a href="games/2048/index.html">Play 2048</a>
     </div>
-  </footer>
+    <div class="game">
+      <a href="games/flappy/index.html">Play Flappy Bird</a>
+    </div>
+  </div>
 </body>
 </html>
